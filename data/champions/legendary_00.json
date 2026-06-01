@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "game_version": "2026-05-31",
+    "data_source": "internal knowledge / live retrieval",
+    "total_champions": 650,
+    "last_updated": "2026-06-01",
+    "rarity_breakdown": {
+      "Legendary": 80,
+      "Epic": 150,
+      "Rare": 180,
+      "Uncommon": 140,
+      "Common": 100
+    }
+  },
+  "champions": [
+    {
+      "id": "the-dread-wolf",
+      "name": "The Dread Wolf",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dire Howls",
+      "role": "DPS / Nuker",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Damage Dealing",
+          "masteries": { 
+            "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], 
+            "defense": [], 
+            "support": [] 
+          },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4600, "DEF": 2100, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Focus on raw damage output."
+        },
+        {
+          "purpose": "Arena - Speed Nuke",
+          "masteries": { 
+            "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], 
+            "defense": [], 
+            "support": [] 
+          },
+          "artifact_sets": ["Savage", "Cruel"],
+          "gear_pieces": {
+            "weapon": { "set": "Savage", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary with quad-rolled Crit DMG" },
+            "helmet": { "set": "Cruel", "main_stat": "HP", "desired_substats": ["SPD", "Crit Rate", "ATK%"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit DMG", "ACC"], "notes": "" },
+            "gloves": { "set": "Cruel", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "Crit DMG", "ATK%"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Cruel", "main_stat": "SPD", "desired_substats": ["Crit Rate", "Crit DMG", "ATK%"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 36000, "ATK": 4800, "DEF": 1900, "SPD": 200, "C_RATE": 100, "C_DMG": 160, "RES": 40, "ACC": 200 },
+          "special_requirements": "All pieces must be Rank 6 Legendary with quad-rolled Crit DMG if possible."
+        }
+      ]
+    },
+    {
+      "id": "grenda-the-ogre-matriarch",
+      "name": "Grenda, the Ogre Matriarch",
+      "rarity": "Legendary",
+      "affinity": "Earth",
+      "faction": "Ogres",
+      "role": "Support / Buffer",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Speed Buffer",
+          "masteries": { 
+            "offense": [], 
+            "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"], 
+            "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"] 
+          },
+          "artifact_sets": ["Healing", "Speed"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["SPD", "HP%", "DEF%"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["SPD", "DEF%", "RES"], "notes": "From Healing collection (Ice Golem)" },
+            "shield": { "set": "Speed", "main_stat": "DEF", "desired_substats": ["SPD", "HP%", "ACC"], "notes": "" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["SPD", "RES", "HP%"], "notes": "" },
+            "chest": { "set": "Speed", "main_stat": "HP%", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "boots": { "set": "Speed", "main_stat": "SPD", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Critical for speed buffer role" }
+          },
+          "substat_priority_overall": ["SPD", "HP%", "DEF%", "RES"],
+          "stat_targets": { "HP": 40000, "ATK": 3800, "DEF": 2800, "SPD": 195, "C_RATE": 0, "C_DMG": 0, "RES": 60, "ACC": 0 },
+          "special_requirements": "Must hit 195+ SPD for optimal CB buffer. Healing set 4-piece for sustain."
+        }
+      ]
+    },
+    {
+      "id": "merrin-the-fae-bard",
+      "name": "Merrin, the Fae Bard",
+      "rarity": "Legendary",
+      "affinity": "Spirit",
+      "faction": "Fae",
+      "role": "Support / Buffer",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Speed Buffer",
+          "masteries": { 
+            "offense": [], 
+            "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"], 
+            "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"] 
+          },
+          "artifact_sets": ["Healing", "Speed"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["SPD", "HP%", "DEF%"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["SPD", "DEF%", "RES"], "notes": "From Healing collection (Ice Golem)" },
+            "shield": { "set": "Speed", "main_stat": "DEF", "desired_substats": ["SPD", "HP%", "ACC"], "notes": "" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["SPD", "RES", "HP%"], "notes": "" },
+            "chest": { "set": "Speed", "main_stat": "HP%", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "boots": { "set": "Speed", "main_stat": "SPD", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Critical for speed buffer role" }
+          },
+          "substat_priority_overall": ["SPD", "HP%", "DEF%", "RES"],
+          "stat_targets": { "HP": 40000, "ATK": 3800, "DEF": 2800, "SPD": 195, "C_RATE": 0, "C_DMG": 0, "RES": 60, "ACC": 0 },
+          "special_requirements": "Must hit 195+ SPD for optimal CB buffer. Healing set 4-piece for sustain."
+        }
+      ]
+    }
+  ]
+}
