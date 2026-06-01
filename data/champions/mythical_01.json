@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "game_version": "2026-05-31",
+    "data_source": "internal knowledge / live retrieval",
+    "total_champions": 650,
+    "rarity": "Mythical",
+    "last_updated": "2026-06-01"
+  },
+  "champions": [
+    {
+      "id": "lyra-the-shadowblade",
+      "name": "Lyra, the Shadowblade",
+      "rarity": "Mythical",
+      "affinity": "Shadow",
+      "faction": "High Elves",
+      "role": "Support / Buffer",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Speed Buffer",
+          "masteries": {
+            "offense": [],
+            "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"],
+            "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"]
+          },
+          "artifact_sets": ["Healing", "Speed"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["SPD", "HP%", "DEF%"], "notes": "Rank 6 Legendary, prioritize SPD" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["SPD", "DEF%", "RES"], "notes": "From Healing collection (Ice Golem)" },
+            "shield": { "set": "Speed", "main_stat": "DEF", "desired_substats": ["SPD", "HP%", "ACC"], "notes": "" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["SPD", "RES", "HP%"], "notes": "Swift Parry DEF% gloves acceptable if better SPD" },
+            "chest": { "set": "Speed", "main_stat": "HP%", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "boots": { "set": "Speed", "main_stat": "SPD", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Critical for speed buffer role" }
+          },
+          "substat_priority_overall": ["SPD", "HP%", "DEF%", "RES"],
+          "stat_targets": { "HP": 40000, "ATK": 3800, "DEF": 2800, "SPD": 195, "C_RATE": 0, "C_DMG": 0, "RES": 60, "ACC": 0 },
+          "special_requirements": "Must hit 195+ SPD for optimal CB buffer. Healing set 4-piece for sustain."
+        },
+        {
+          "purpose": "Doom Tower - Unkillable Buffer",
+          "masteries": {
+            "offense": [],
+            "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"],
+            "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"]
+          },
+          "artifact_sets": ["Healing", "Cruel"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Sustain focused" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["DEF%", "HP%", "RES"], "notes": "" },
+            "shield": { "set": "Cruel", "main_stat": "DEF", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Cruel for extra HP on hit" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["HP%", "RES", "SPD"], "notes": "" },
+            "chest": { "set": "Healing", "main_stat": "HP%", "desired_substats": ["DEF%", "RES", "SPD"], "notes": "" },
+            "boots": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["HP%", "RES", "SPD"], "notes": "Tanky boots for survivability" }
+          },
+          "substat_priority_overall": ["HP%", "DEF%", "RES", "SPD"],
+          "stat_targets": { "HP": 45000, "ATK": 3500, "DEF": 3200, "SPD": 180, "C_RATE": 0, "C_DMG": 0, "RES": 80, "ACC": 0 },
+          "special_requirements": "Focus on raw HP and DEF for unkillable teams."
+        }
+      ]
+    },
+    {
+      "id": "khaelen-the-darkblade",
+      "name": "Khaelen, the Darkblade",
+      "rarity": "Mythical",
+      "affinity": "Shadow",
+      "faction": "High Elves",
+      "role": "DPS / Nuker",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Damage Dealing",
+          "masteries": {
+            "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"],
+            "defense": [],
+            "support": []
+          },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary, quad-roll Crit DMG preferred" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "Savage for burst damage" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "Swift Parry Crit Rate if needed" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4500, "DEF": 2200, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain in CB. Savage 2-piece for burst."
+        },
+        {
+          "purpose": "Dungeon Farmer - Dragon/Fire Knight",
+          "masteries": {
+            "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"],
+            "defense": [],
+            "support": []
+          },
+          "artifact_sets": ["Savage", "Cruel"],
+          "gear_pieces": {
+            "weapon": { "set": "Savage", "main_stat": "ATK", "desired_substats": ["Crit Rate", "Crit DMG", "SPD"], "notes": "Max ATK% substat priority" },
+            "helmet": { "set": "Cruel", "main_stat": "HP", "desired_substats": ["ATK%", "Crit Rate", "DEF%"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["Crit DMG", "SPD", "ACC"], "notes": "" },
+            "gloves": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["Crit Rate", "Crit DMG", "SPD"], "notes": "ATK% gloves for max damage" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["Crit Rate", "Crit DMG", "DEF%"], "notes": "" },
+            "boots": { "set": "Cruel", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "HP%"], "notes": "" }
+          },
+          "substat_priority_overall": ["Crit Rate", "Crit DMG", "ATK%", "SPD"],
+          "stat_targets": { "HP": 35000, "ATK": 4800, "DEF": 2000, "SPD": 185, "C_RATE": 100, "C_DMG": 160, "RES": 40, "ACC": 200 },
+          "special_requirements": "Savage 4-piece for dungeon nuking. ACC 200+ recommended."
+        }
+      ]
+    },
+    {
+      "id": "the-wicked-queen",
+      "name": "The Wicked Queen",
+      "rarity": "Mythical",
+      "affinity": "Shadow",
+      "faction": "Dark Elves",
+      "role": "Support / Debuffer",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Defense Reduction",
+          "masteries": {
+            "offense": [],
+            "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"],
+            "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"]
+          },
+          "artifact_sets": ["Healing", "Speed"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["SPD", "HP%", "DEF%"], "notes": "" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["SPD", "RES", "DEF%"], "notes": "Ice Golem collection" },
+            "shield": { "set": "Speed", "main_stat": "DEF", "desired_substats": ["SPD", "ACC", "HP%"], "notes": "ACC for debuff application" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["SPD", "RES", "HP%"], "notes": "" },
+            "chest": { "set": "Speed", "main_stat": "HP%", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "boots": { "set": "Speed", "main_stat": "SPD", "desired_substats": ["HP%", "DEF%", "ACC"], "notes": "High SPD for early debuffs" }
+          },
+          "substat_priority_overall": ["SPD", "ACC", "RES", "HP%"],
+          "stat_targets": { "HP": 42000, "ATK": 3600, "DEF": 2900, "SPD": 195, "C_RATE": 0, "C_DMG": 0, "RES": 70, "ACC": 250 },
+          "special_requirements": "ACC 250+ for reliable debuff application on Nightmare/Ultra-Nightmare CB."
+        }
+      ]
+    },
+    {
+      "id": "the-dread-wolf",
+      "name": "The Dread Wolf",
+      "rarity": "Mythical",
+      "affinity": "Shadow",
+      "faction": "Dire Howls",
+      "role": "DPS / Nuker",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Damage Dealing",
+          "masteries": {
+            "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"],
+            "defense": [],
+            "support": []
+          },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4600, "DEF": 2100, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Focus on raw damage output."
+        }
+      ]
+    },
+    {
+      "id": "the-abyssal-lurker",
+      "name": "The Abyssal Lurker",
+      "rarity": "Mythical",
+      "affinity": "Shadow",
+      "faction": "Shadowborn",
+      "role": "DPS / DoT",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - DoT Damage",
+          "masteries": {
+            "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"],
+            "defense": [],
+            "support": []
+          },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 37000, "ATK": 4400, "DEF": 2100, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal for sustain. High ATK% for DoT scaling."
+        }
+      ]
+    }
+  ]
+}
