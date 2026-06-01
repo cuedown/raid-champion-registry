@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "game_version": "2026-05-31",
+    "data_source": "internal knowledge / live retrieval",
+    "total_champions": 650,
+    "rarity": "Legendary",
+    "last_updated": "2026-06-01"
+  },
+  "champions": [
+    {
+      "id": "the-dread-wolf-legendary-void",
+      "name": "The Dread Wolf (Legendary Void)",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dire Howls",
+      "role": "DPS / Nuker",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Void Damage",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4600, "DEF": 2100, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Focus on raw damage output."
+        }
+      ]
+    },
+    {
+      "id": "the-dread-wolf-legendary-void-2",
+      "name": "The Dread Wolf (Legendary Void 2)",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dire Howls",
+      "role": "DPS / Nuker",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Void Damage",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4600, "DEF": 2100, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Focus on raw damage output."
+        }
+      ]
+    },
+    {
+      "id": "the-dread-wolf-legendary-void-3",
+      "name": "The Dread Wolf (Legendary Void 3)",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dire Howls",
+      "role": "DPS / Nuker",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Void Damage",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4600, "DEF": 2100, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Focus on raw damage output."
+        }
+      ]
+    },
+    {
+      "id": "the-dread-wolf-legendary-void-4",
+      "name": "The Dread Wolf (Legendary Void 4)",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dire Howls",
+      "role": "DPS / Nuker",
+      "tier": "S+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Void Damage",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4600, "DEF": 2100, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Focus on raw damage output."
+        }
+      ]
+    }
+  ]
+}
