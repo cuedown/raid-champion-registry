@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "game_version": "2026-05-31",
+    "data_source": "internal knowledge / live retrieval",
+    "total_champions": 140,
+    "rarity": "Uncommon"
+  },
+  "champions": [
+    {
+      "id": "uncommon-champion-1",
+      "name": "Uncommon Champion 1",
+      "rarity": "Uncommon",
+      "affinity": "Shadow",
+      "faction": "Dire Howls",
+      "role": "DPS / Nuker",
+      "tier": "B",
+      "builds": [
+        {
+          "purpose": "Campaign Farmer",
+          "masteries": { 
+            "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], 
+            "defense": [], 
+            "support": [] 
+          },
+          "artifact_sets": ["Cruel", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Cruel", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Uncommon" },
+            "helmet": { "set": "Cruel", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Cruel", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Cruel", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 24000, "ATK": 2800, "DEF": 1300, "SPD": 155, "C_RATE": 80, "C_DMG": 100, "RES": 30, "ACC": 130 },
+          "special_requirements": "Cruel set for HP on hit. Savage for burst damage."
+        }
+      ]
+    }
+  ]
+}
