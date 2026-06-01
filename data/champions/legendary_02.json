@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "game_version": "2026-05-31",
+    "data_source": "internal knowledge / live retrieval",
+    "total_champions": 650,
+    "rarity": "Legendary",
+    "last_updated": "2026-06-01"
+  },
+  "champions": [
+    {
+      "id": "drystroya-the-frostbringer",
+      "name": "Drystroya, the Frostbringer",
+      "rarity": "Legendary",
+      "affinity": "Water",
+      "faction": "Dragons",
+      "role": "Support / Debuffer",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Defense Reduction",
+          "masteries": { "offense": [], "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"], "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"] },
+          "artifact_sets": ["Healing", "Speed"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["SPD", "HP%", "DEF%"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["SPD", "RES", "DEF%"], "notes": "Ice Golem collection" },
+            "shield": { "set": "Speed", "main_stat": "DEF", "desired_substats": ["SPD", "ACC", "HP%"], "notes": "ACC for debuff application" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["SPD", "RES", "HP%"], "notes": "" },
+            "chest": { "set": "Speed", "main_stat": "HP%", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "boots": { "set": "Speed", "main_stat": "SPD", "desired_substats": ["HP%", "DEF%", "ACC"], "notes": "High SPD for early debuffs" }
+          },
+          "substat_priority_overall": ["SPD", "ACC", "RES", "HP%"],
+          "stat_targets": { "HP": 42000, "ATK": 3600, "DEF": 2900, "SPD": 195, "C_RATE": 0, "C_DMG": 0, "RES": 70, "ACC": 250 },
+          "special_requirements": "ACC 250+ for reliable debuff application on Nightmare/Ultra-Nightmare CB."
+        }
+      ]
+    },
+    {
+      "id": "tharja-the-eldritch-warlock",
+      "name": "Tharja, the Eldritch Warlock",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dragons",
+      "role": "DPS / Nuker",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Damage Dealing",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4500, "DEF": 2200, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Savage 2-piece for burst damage."
+        }
+      ]
+    },
+    {
+      "id": "grenda-the-ogre-matriarch",
+      "name": "Grenda, the Ogre Matriarch",
+      "rarity": "Legendary",
+      "affinity": "Earth",
+      "faction": "Ogres",
+      "role": "Support / Buffer",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Speed Buffer",
+          "masteries": { "offense": [], "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"], "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"] },
+          "artifact_sets": ["Healing", "Speed"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["SPD", "HP%", "DEF%"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["SPD", "DEF%", "RES"], "notes": "From Healing collection (Ice Golem)" },
+            "shield": { "set": "Speed", "main_stat": "DEF", "desired_substats": ["SPD", "HP%", "ACC"], "notes": "" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["SPD", "RES", "HP%"], "notes": "" },
+            "chest": { "set": "Speed", "main_stat": "HP%", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "boots": { "set": "Speed", "main_stat": "SPD", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Critical for speed buffer role" }
+          },
+          "substat_priority_overall": ["SPD", "HP%", "DEF%", "RES"],
+          "stat_targets": { "HP": 40000, "ATK": 3800, "DEF": 2800, "SPD": 195, "C_RATE": 0, "C_DMG": 0, "RES": 60, "ACC": 0 },
+          "special_requirements": "Must hit 195+ SPD for optimal CB buffer. Healing set 4-piece for sustain."
+        }
+      ]
+    },
+    {
+      "id": "merrin-the-fae-bard",
+      "name": "Merrin, the Fae Bard",
+      "rarity": "Legendary",
+      "affinity": "Spirit",
+      "faction": "Fae",
+      "role": "Support / Buffer",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Speed Buffer",
+          "masteries": { "offense": [], "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"], "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"] },
+          "artifact_sets": ["Healing", "Speed"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["SPD", "HP%", "DEF%"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["SPD", "DEF%", "RES"], "notes": "From Healing collection (Ice Golem)" },
+            "shield": { "set": "Speed", "main_stat": "DEF", "desired_substats": ["SPD", "HP%", "ACC"], "notes": "" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["SPD", "RES", "HP%"], "notes": "" },
+            "chest": { "set": "Speed", "main_stat": "HP%", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "boots": { "set": "Speed", "main_stat": "SPD", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Critical for speed buffer role" }
+          },
+          "substat_priority_overall": ["SPD", "HP%", "DEF%", "RES"],
+          "stat_targets": { "HP": 40000, "ATK": 3800, "DEF": 2800, "SPD": 195, "C_RATE": 0, "C_DMG": 0, "RES": 60, "ACC": 0 },
+          "special_requirements": "Must hit 195+ SPD for optimal CB buffer. Healing set 4-piece for sustain."
+        }
+      ]
+    },
+    {
+      "id": "the-sorceress-supreme",
+      "name": "The Sorceress Supreme",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dark Elves",
+      "role": "DPS / Nuker",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Damage Dealing",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4500, "DEF": 2200, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Savage 2-piece for burst damage."
+        }
+      ]
+    },
+    {
+      "id": "the-hydra-queen",
+      "name": "The Hydra Queen",
+      "rarity": "Legendary",
+      "affinity": "Earth",
+      "faction": "Dragons",
+      "role": "Support / Buffer",
+      "tier": "S",
+      "builds": [
+        {
+          "purpose": "Hydra - Speed Buffer",
+          "masteries": { "offense": [], "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"], "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"] },
+          "artifact_sets": ["Healing", "Speed"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["SPD", "HP%", "DEF%"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["SPD", "DEF%", "RES"], "notes": "From Healing collection (Ice Golem)" },
+            "shield": { "set": "Speed", "main_stat": "DEF", "desired_substats": ["SPD", "HP%", "ACC"], "notes": "" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["SPD", "RES", "HP%"], "notes": "" },
+            "chest": { "set": "Speed", "main_stat": "HP%", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "boots": { "set": "Speed", "main_stat": "SPD", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Critical for speed buffer role" }
+          },
+          "substat_priority_overall": ["SPD", "HP%", "DEF%", "RES"],
+          "stat_targets": { "HP": 40000, "ATK": 3800, "DEF": 2800, "SPD": 195, "C_RATE": 0, "C_DMG": 0, "RES": 60, "ACC": 0 },
+          "special_requirements": "Must hit 195+ SPD for optimal Hydra buffer. Healing set 4-piece for sustain."
+        }
+      ]
+    }
+  ]
+}
