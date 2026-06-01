@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "game_version": "2026-05-31",
+    "data_source": "internal knowledge / live retrieval",
+    "total_champions": 650,
+    "rarity": "Legendary",
+    "last_updated": "2026-06-01"
+  },
+  "champions": [
+    {
+      "id": "the-abyssal-warden",
+      "name": "The Abyssal Warden",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dark Elves",
+      "role": "Tank / Support",
+      "tier": "A+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Unkillable Tank",
+          "masteries": { "offense": [], "defense": ["Tough Skin", "Blastproof", "Rejuvenation", "Resurgent", "Delay Death", "Retribution"], "support": ["Gifted Healer", "Vitality", "Nurturing", "Lifeward", "Sustainer", "Mending"] },
+          "artifact_sets": ["Healing", "Cruel"],
+          "gear_pieces": {
+            "weapon": { "set": "Healing", "main_stat": "ATK", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Healing", "main_stat": "HP", "desired_substats": ["DEF%", "HP%", "RES"], "notes": "From Healing collection (Ice Golem)" },
+            "shield": { "set": "Cruel", "main_stat": "DEF", "desired_substats": ["HP%", "DEF%", "RES"], "notes": "Cruel for extra HP on hit" },
+            "gloves": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["HP%", "RES", "SPD"], "notes": "" },
+            "chest": { "set": "Healing", "main_stat": "HP%", "desired_substats": ["DEF%", "RES", "SPD"], "notes": "" },
+            "boots": { "set": "Healing", "main_stat": "DEF%", "desired_substats": ["HP%", "RES", "SPD"], "notes": "Tanky boots for survivability" }
+          },
+          "substat_priority_overall": ["HP%", "DEF%", "RES", "SPD"],
+          "stat_targets": { "HP": 45000, "ATK": 3500, "DEF": 3200, "SPD": 180, "C_RATE": 0, "C_DMG": 0, "RES": 80, "ACC": 0 },
+          "special_requirements": "Focus on raw HP and DEF for unkillable teams."
+        }
+      ]
+    },
+    {
+      "id": "the-abyssal-huntress",
+      "name": "The Abyssal Huntress",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dark Elves",
+      "role": "DPS / Nuker",
+      "tier": "A+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Damage Dealing",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4500, "DEF": 2200, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Savage 2-piece for burst damage."
+        }
+      ]
+    },
+    {
+      "id": "the-abyssal-archer",
+      "name": "The Abyssal Archer",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dark Elves",
+      "role": "DPS / Nuker",
+      "tier": "A+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Damage Dealing",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4500, "DEF": 2200, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Savage 2-piece for burst damage."
+        }
+      ]
+    },
+    {
+      "id": "the-abyssal-wrath",
+      "name": "The Abyssal Wrath",
+      "rarity": "Legendary",
+      "affinity": "Shadow",
+      "faction": "Dark Elves",
+      "role": "DPS / Nuker",
+      "tier": "A+",
+      "builds": [
+        {
+          "purpose": "Clan Boss - Damage Dealing",
+          "masteries": { "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"], "defense": [], "support": [] },
+          "artifact_sets": ["Lifesteal", "Savage"],
+          "gear_pieces": {
+            "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
+            "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
+            "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
+            "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
+            "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
+            "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
+          },
+          "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
+          "stat_targets": { "HP": 38000, "ATK": 4500, "DEF": 2200, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
+          "special_requirements": "Lifesteal 4-piece for sustain. Savage 2-piece for burst damage."
+        }
+      ]
+    }
+  ]
+}
