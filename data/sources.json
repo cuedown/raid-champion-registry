@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_key": "game-export",
+      "name": "RAID client/static-data export",
+      "homepage": "https://raidshadowlegends.com/",
+      "terms_url": "https://plarium.com/en/legal/terms-of-use/",
+      "license_id": null,
+      "source_kind": "game_export",
+      "automated_fetch_allowed": false,
+      "authority_level": 100,
+      "max_age_days": 30,
+      "notes": "Canonical identity source supplied by an operator-owned client/export. Never upload credentials or account identifiers."
+    },
+    {
+      "source_key": "manual-editorial",
+      "name": "Reliquary editorial recommendations",
+      "homepage": "https://github.com/cuedown/raid-champion-registry",
+      "terms_url": null,
+      "license_id": "MIT",
+      "source_kind": "manual_editorial",
+      "automated_fetch_allowed": false,
+      "authority_level": 100,
+      "max_age_days": 180,
+      "notes": "First-party, reviewed recommendations. Only approved rows are published to the app."
+    },
+    {
+      "source_key": "community-observation",
+      "name": "Opt-in anonymized account-build observations",
+      "homepage": "https://github.com/cuedown/raid-champion-registry",
+      "terms_url": null,
+      "license_id": null,
+      "source_kind": "community_observation",
+      "automated_fetch_allowed": false,
+      "authority_level": 35,
+      "max_age_days": 90,
+      "notes": "Aggregate mastery fingerprints only. No player name, account ID, device ID, or credentials are retained."
+    },
+    {
+      "source_key": "raid-codex-2021",
+      "name": "Raid Codex data archive",
+      "homepage": "https://github.com/raid-codex/data",
+      "terms_url": "https://github.com/raid-codex/data/blob/master/LICENSE",
+      "license_id": "MIT",
+      "source_kind": "licensed_dataset",
+      "automated_fetch_allowed": true,
+      "authority_level": 25,
+      "max_age_days": 0,
+      "notes": "Historical bootstrap only. The upstream dataset stopped updating in May 2021; imported builds are never auto-approved."
+    },
+    {
+      "source_key": "raid-toolkit-mastery-ids",
+      "name": "Raid Toolkit mastery ID catalog",
+      "homepage": "https://github.com/raid-toolkit/raid-toolkit",
+      "terms_url": "https://github.com/raid-toolkit/raid-toolkit/blob/main/LICENSE",
+      "license_id": "MIT",
+      "source_kind": "licensed_dataset",
+      "automated_fetch_allowed": true,
+      "authority_level": 70,
+      "max_age_days": null,
+      "notes": "Stable mastery ID/name mapping. Current client exports should be used to detect any future mastery-tree changes."
+    },
+    {
+      "source_key": "hellhades-reference",
+      "name": "HellHades champion guides",
+      "homepage": "https://hellhades.com/raid/champions/",
+      "terms_url": "https://hellhades.com/terms-and-conditions/",
+      "license_id": null,
+      "source_kind": "reference_only",
+      "automated_fetch_allowed": false,
+      "authority_level": 85,
+      "max_age_days": 180,
+      "notes": "Link/manual evidence only. Current terms expressly prohibit spidering, crawling, and scraping; no downloader is implemented."
+    },
+    {
+      "source_key": "ayumilove-reference",
+      "name": "AyumiLove champion guides",
+      "homepage": "https://ayumilove.net/raid-shadow-legends-guide/",
+      "terms_url": null,
+      "license_id": null,
+      "source_kind": "reference_only",
+      "automated_fetch_allowed": false,
+      "authority_level": 70,
+      "max_age_days": 180,
+      "notes": "Link/manual evidence only until explicit reuse and automated-access permission is documented."
+    }
+  ]
+}
