@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "champion": {"game_id": 1510, "slug": "kael", "name": "Kael"},
+  "builds": [
+    {
+      "key": "kael:pve-general-example",
+      "title": "PvE general example",
+      "build_type": "pve",
+      "status": "draft",
+      "confidence": 50,
+      "priority": 100,
+      "scopes": ["campaign", "dragon", "demon-lord"],
+      "masteries": [
+        "deadly-precision",
+        "heart-of-glory",
+        "keen-strike",
+        "single-out",
+        "life-drinker",
+        "bring-it-down",
+        "cycle-of-violence",
+        "methodical",
+        "kill-streak",
+        "warmaster",
+        "pinpoint-accuracy",
+        "charged-focus",
+        "swarm-smiter",
+        "lore-of-steel",
+        "master-hexer"
+      ],
+      "authored_by": "replace-with-editor",
+      "rationale": "Format example only. Verify the current champion kit, intended content, and all evidence before approval.",
+      "evidence": [
+        {
+          "source_key": "hellhades-reference",
+          "url": "https://hellhades.com/raid/champions/kael/",
+          "note": "Manual reference; do not scrape."
+        }
+      ]
+    }
+  ]
+}
