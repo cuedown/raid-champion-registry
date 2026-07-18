@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "champions": [
+    {
+      "game_id": 1510,
+      "slug": "kael",
+      "name": "Kael",
+      "rarity": "Rare",
+      "affinity": "Magic",
+      "faction": "Dark Elves",
+      "champion_type": "Attack"
+    }
+  ]
+}
