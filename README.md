@@ -1,119 +1,164 @@
-# Raid: Shadow Legends - Complete Champion Registry
+# RAID Champion Mastery Registry
 
-## Overview
-This repository contains the definitive champion registry for Raid: Shadow Legends, covering all 650+ champions across all rarities (Common, Uncommon, Rare, Epic, Legendary) with detailed mastery builds, artifact recommendations, and stat targets.
+A provenance-first SQLite registry for champion identities, mastery nodes, and
+content-specific mastery recommendations. The default app export contains only
+human-reviewed, structurally valid `approved` builds.
 
-## Data Structure
+> **Repository reset:** the original JSON files are fabricated/placeholder
+> data (for example, `The Dread Wolf`, `Rare Champion 1`, invalid affinities,
+> and invalid mastery tiers). They are quarantined as legacy material and are
+> never read by this implementation. Do not ship them in an application.
+
+## What this solves
+
+- One normalized SQL database contains every champion; each champion can have
+  several builds for different content such as Arena, Demon Lord, Hydra, or
+  campaign farming.
+- Every imported fact has a source snapshot, retrieval time, parser version,
+  and SHA-256 content hash.
+- `approved` builds must have exactly 15 picks, a valid 10/5 two-tree split,
+  no more than one Tier 6 mastery, evidence, a reviewer, and a review date.
+- Historical and observed/popular builds are retained for research but are not
+  silently presented as truth.
+- The application receives deterministic JSON or can query the SQLite database
+  directly.
+
+## Source strategy
+
+There is no official Plarium feed of recommended champion mastery builds.
+Plarium documents the mastery system, while champion-specific choices are
+editorial judgments that differ by role and content.
+
+The registry therefore keeps these layers separate:
+
+1. **Current client/game export:** canonical champion identity and any current
+   mastery IDs. This should come from the standalone exporter used by Reliquary.
+2. **Raid Toolkit:** MIT-licensed mapping for the 66 mastery IDs and names.
+3. **Raid Codex:** optional MIT-licensed 2021 bootstrap. It is imported only as
+   `historical`, never as current or approved.
+4. **Opt-in observations:** anonymized mastery fingerprints from account
+   exports can identify common full builds. Popularity creates a `draft`, not
+   an approval.
+5. **Reliquary editorial review:** current, content-specific builds with links
+   to evidence become the source the app publishes.
+
+HellHades is **reference-only**. Its current terms expressly prohibit
+spidering, crawling, and scraping, so this project does not include a
+HellHades downloader. Add an automated adapter only after written permission
+or an official licensed API is documented.
+
+See [Source policy](docs/SOURCE_POLICY.md) and
+[Editorial workflow](docs/EDITORIAL_WORKFLOW.md).
+
+## Quick start
+
+Requires Python 3.11+ and no third-party runtime dependencies.
+
+```bash
+python -m registry init --db build/registry.sqlite
+python -m registry import-champions --db build/registry.sqlite path/to/current-champions.json
+python -m registry import-recommendations --db build/registry.sqlite data/curated/kael.json
+python -m registry validate --db build/registry.sqlite
+python -m registry export --db build/registry.sqlite --output build/masteries.json
 ```
-data/
-├── champions/
-│   ├── legendary_*.json    # Legendary champions (80+)
-│   ├── epic_*.json        # Epic champions (150+)
-│   ├── rare_*.json        # Rare champions (180+)
-│   ├── uncommon_*.json    # Uncommon champions (140+)
-│   └── common_*.json      # Common champions (100+)
+
+The export command includes only `approved` recommendations by default. For an
+editorial preview, add `--status draft`; for audit work, add
+`--status historical` as another repeated option.
+
+Install the console command if preferred:
+
+```bash
+python -m pip install -e .
+raid-registry audit --db build/registry.sqlite
 ```
 
-## Champion Data Schema
-Each champion entry includes:
-- **id**: Unique identifier
-- **name**: Champion name
-- **rarity**: Common, Uncommon, Rare, Epic, or Legendary
-- **affinity**: Shadow, Earth, Spirit, Fire, or Light
-- **faction**: Faction affiliation
-- **role**: Primary role (DPS, Support, Tank, etc.)
-- **tier**: Tier rating (S+, S, A+, A, B+, B, C+)
-- **builds**: Array of builds with:
-  - `purpose`: Build purpose (Clan Boss, Arena, Dungeon Farmer, etc.)
-  - `masteries`: Complete mastery tree paths
-    - `offense`: 6-tier path
-    - `defense`: 6-tier path
-    - `support`: 6-tier path
-  - `artifact_sets`: Recommended artifact sets
-  - `gear_pieces`: Detailed recommendations for all 6 slots:
-    - `set`: Artifact set name
-    - `main_stat`: Optimal main stat
-    - `desired_substats`: Ordered list of desired substats
-    - `notes`: Special requirements
-  - `substat_priority_overall`: Global substat priority
-  - `stat_targets`: Recommended stat thresholds
-  - `special_requirements`: Additional notes
+## Import a current champion catalog
 
-## Example Champion Entry
+The importer accepts JSON, CSV, and common account-export wrappers such as
+`champions`, `heroes`, `data.champions`, `static.champions`, and
+`account.champions`. A minimal canonical record is:
+
 ```json
 {
-  "id": "the-dread-wolf",
-  "name": "The Dread Wolf",
-  "rarity": "Legendary",
-  "affinity": "Shadow",
-  "faction": "Dire Howls",
-  "role": "DPS / Nuker",
-  "tier": "S",
-  "builds": [
-    {
-      "purpose": "Clan Boss - Damage Dealing",
-      "masteries": {
-        "offense": ["Deadly Precision", "Keen Strike", "Heart of Glory", "Single Out", "Bring It Down", "Warmaster"],
-        "defense": [],
-        "support": []
-      },
-      "artifact_sets": ["Lifesteal", "Savage"],
-      "gear_pieces": {
-        "weapon": { "set": "Lifesteal", "main_stat": "ATK", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "Rank 6 Legendary" },
-        "helmet": { "set": "Lifesteal", "main_stat": "HP", "desired_substats": ["SPD", "ATK%", "RES"], "notes": "" },
-        "shield": { "set": "Savage", "main_stat": "DEF", "desired_substats": ["SPD", "Crit Rate", "ACC"], "notes": "" },
-        "gloves": { "set": "Lifesteal", "main_stat": "Crit Rate%", "desired_substats": ["SPD", "ATK%", "Crit DMG"], "notes": "" },
-        "chest": { "set": "Savage", "main_stat": "ATK%", "desired_substats": ["SPD", "Crit Rate", "Crit DMG"], "notes": "" },
-        "boots": { "set": "Lifesteal", "main_stat": "SPD", "desired_substats": ["Crit Rate", "ATK%", "RES"], "notes": "" }
-      },
-      "substat_priority_overall": ["SPD", "Crit Rate", "Crit DMG", "ATK%"],
-      "stat_targets": { "HP": 38000, "ATK": 4600, "DEF": 2100, "SPD": 190, "C_RATE": 100, "C_DMG": 150, "RES": 50, "ACC": 180 },
-      "special_requirements": "Lifesteal 4-piece for sustain. Focus on raw damage output."
-    }
-  ]
+  "game_id": 1510,
+  "name": "Kael",
+  "rarity": "Rare",
+  "affinity": "Magic",
+  "faction": "Dark Elves",
+  "champion_type": "Attack"
 }
 ```
 
-## Mastery Tree Reference
-### Offense Tree
-- **T1**: Deadly Precision, Keen Strike, Heart of Glory
-- **T2**: Single Out, Bring It Down, Warmaster
-- **T3**: (Additional nodes)
+Use a champion template/type ID, not an owned-instance ID. The importer rejects
+unknown rarities, affinities, champion types, conflicting IDs, and nameless
+rows. Invalid records are recorded in `import_issue`.
 
-### Defense Tree
-- **T1**: Tough Skin, Blastproof, Rejuvenation
-- **T2**: Resurgent, Delay Death, Retribution
-- **T3**: (Additional nodes)
+## Optional historical bootstrap
 
-### Support Tree
-- **T1**: Gifted Healer, Vitality, Nurturing
-- **T2**: Lifeward, Sustainer, Mending
-- **T3**: (Additional nodes)
+Raid Codex stopped updating in May 2021, but its final dataset is useful for
+locating older candidates and is MIT licensed.
 
-## Artifact Sets Reference
-- **Lifesteal**: HP% on hit (DPS sustain)
-- **Healing**: Healing power boost (Support)
-- **Savage**: Crit DMG boost (Burst DPS)
-- **Cruel**: HP on hit (Early game DPS)
-- **Speed**: Speed boost (Buffer/Speed lead)
+```bash
+python -m registry sync-raid-codex cache/raid-codex
+python -m registry import-raid-codex --db build/registry.sqlite cache/raid-codex
+```
 
-## Usage
-This data is designed to be consumed by companion applications for:
-- Champion build optimization
-- Team composition planning
-- Artifact farming guidance
-- Mastery path recommendations
+The downloader uses a pinned GitHub commit and verifies every JSON file before
+writing a manifest of hashes. It does not scrape raid-codex.com or another
+guide website.
 
-## Data Freshness
-Last updated: 2026-06-01
-Game version: 2026-05-31
+## Build coverage from opt-in exports
 
-## Contributing
-Pull requests welcome for:
-- New champion additions
-- Build optimization updates
-- Meta changes
-- Bug fixes
+The observation importer deliberately stores no player name, account ID,
+device ID, email, or credentials. It retains only champion ID, mastery IDs, a
+fingerprint, count, and timestamps.
+
+```bash
+python -m registry observe --consent --db build/registry.sqlite path/to/account-export.json
+python -m registry promote-observations --min-samples 10 --db build/registry.sqlite
+```
+
+Promotion creates a `draft` for the most common valid full path per champion.
+An editor must still determine its correct game-mode scope and approve it.
+
+## Reproducible rebuild
+
+```bash
+python -m registry build \
+  --db build/registry.sqlite \
+  --champions path/to/current-champions.json \
+  --recommendations-dir data/curated \
+  --output build/masteries.json
+```
+
+Use `--require-complete` only when every active champion is expected to have at
+least one approved build. This makes incomplete application releases fail CI.
+
+## Tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The GitHub workflow runs the tests and validates the canonical 66-node mastery
+catalog on every push and pull request.
+
+## Application contract
+
+Use `build/masteries.json` as the stable read model. Each champion contains
+zero or more `mastery_builds`; each build includes scopes, confidence, review
+metadata, masteries grouped by tree, and evidence. Champions with no approved
+build remain present with an empty array, allowing the UI to show “review
+pending” instead of inventing a recommendation.
+
+The normalized SQL tables remain the write/audit model. The most relevant
+views are:
+
+- `v_published_mastery_builds`: flat, approved app rows;
+- `v_champion_coverage`: approved/draft/historical counts per champion.
 
 ## License
-MIT License
+
+Project code is MIT. See [Third-party notices](THIRD_PARTY_NOTICES.md) for the
+mastery ID mapping and optional historical adapter.

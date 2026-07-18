@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raid-champion-registry"
+version = "0.1.0"
+description = "Provenance-first SQLite registry for RAID champion mastery recommendations"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Reliquary"}]
+dependencies = []
+
+[project.scripts]
+raid-registry = "registry.cli:main"
+
+[tool.setuptools]
+packages = ["registry"]
+
+[tool.setuptools.package-data]
+registry = ["schema.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

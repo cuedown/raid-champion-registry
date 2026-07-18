@@ -1,27 +1,15 @@
 {
-  "metadata": {
-    "game_version": "2026-05-31",
-    "data_source": "internal knowledge / live retrieval",
-    "total_champions": 650,
-    "last_updated": "2026-06-01",
-    "rarity_breakdown": {
-      "Legendary": 80,
-      "Epic": 150,
-      "Rare": 180,
-      "Uncommon": 140,
-      "Common": 100
-    },
-    "champion_files": {
-      "legendary": ["data/champions/legendary_00.json", "data/champions/legendary_01.json", "data/champions/legendary_02.json", "data/champions/legendary_03.json", "data/champions/legendary_04.json", "data/champions/legendary_05.json", "data/champions/legendary_06.json", "data/champions/legendary_07.json"],
-      "epic": ["data/champions/epic_00.json", "data/champions/epic_01.json"],
-      "rare": ["data/champions/rare_00.json", "data/champions/rare_01.json"],
-      "uncommon": ["data/champions/uncommon_00.json"],
-      "common": ["data/champions/common_00.json"]
-    }
-  },
-  "usage_instructions": {
-    "load_all_champions": "Merge all JSON files from data/champions/ directory",
-    "filter_by_rarity": "Use rarity_breakdown to determine which files to load",
-    "search_by_id": "Each champion has a unique id field for quick lookup"
-  }
+  "schema_version": 1,
+  "status": "provenance_registry",
+  "legacy_data_status": "quarantined_invalid",
+  "legacy_data_warning": "Files under data/champions are fabricated or placeholder legacy data and must not be consumed.",
+  "canonical_mastery_catalog": "data/masteries.json",
+  "source_policy": "data/sources.json",
+  "database_schema": "registry/schema.sql",
+  "application_export_command": "python -m registry export --db build/registry.sqlite --output build/masteries.json",
+  "documentation": [
+    "README.md",
+    "docs/SOURCE_POLICY.md",
+    "docs/EDITORIAL_WORKFLOW.md"
+  ]
 }
